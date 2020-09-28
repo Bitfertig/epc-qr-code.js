@@ -17,7 +17,7 @@ npm i @dipser/epc-qr-code.js
 ```html
 <script type="module">
 import { girocode } from "@dipser/epc-qr-code.js";
-girocode({
+var g = girocode({
     'service': 'BCD', // Service Tag
     'version': '001', // Version: 001, 002
     'encoding': '2', // Character set: 1 = UTF-8, 2 = ISO 8859-1
@@ -30,6 +30,7 @@ girocode({
     'ref': '', // Reference (strukturierter 35-Zeichen-Code gem. ISO 11649 RF Creditor Reference)
     'reason': '', // Verwendungszweck (max of 140 characters)
     'hint': '', // Optional hint to user
-})
+});
+g.svg() // or g.svg_data_url()
 </script>
 ```
