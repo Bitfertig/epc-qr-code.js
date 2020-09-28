@@ -15,7 +15,7 @@ npm i @dipser/epc-qr-code.js
 ## Usage
 
 ```html
-<script type="module"></script>
+<script type="module">
 import { girocode } from "@dipser/epc-qr-code.js";
 girocode({
     'service': 'BCD', // Service Tag

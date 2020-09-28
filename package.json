@@ -1,0 +1,45 @@
+{
+    "name": "epc-qr-code.js",
+    "version": "1.0.0",
+    "description": "",
+    "author": "dipser",
+    "license": "MIT",
+    "main": "./dist/epc-qr-code.esm.js",
+    "module": "/dist/epc-qr-code.esm.js",
+    "scripts": {
+        "clean": "rm -r dist",
+        "build-dev": "webpack -d --mode development",
+        "build-prod": "webpack -p --mode production",
+        "dev": "webpack --config webpack.config.js --watch --mode development",
+        "dev-nodemon": "nodemon --watch webpack.config.js --exec \"webpack --config webpack.config.js --watch --mode development\""
+    },
+    "keywords": [
+        "girocode",
+        "epc-qr-code",
+        "javascript",
+        "iban",
+        "bic",
+        "bank",
+        "bank transfer"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/Bitfertig/epc-qr-code.js.git"
+    },
+    "dependencies": {},
+    "devDependencies": {
+        "@babel/cli": "^7.10.5",
+        "@babel/core": "^7.11.1",
+        "@babel/node": "^7.10.5",
+        "@babel/preset-env": "^7.11.0",
+        "@babel/register": "^7.10.5",
+        "@purtuga/esm-webpack-plugin": "^1.2.1",
+        "babel-loader": "^8.1.0",
+        "babel-plugin-external-helpers": "^6.22.0",
+        "file-loader": "^6.0.0",
+        "html-webpack-plugin": "^4.3.0",
+        "webpack": "^4.44.1",
+        "webpack-cli": "^3.3.12",
+        "webpack-dev-server": "^3.11.0"
+    }
+}
