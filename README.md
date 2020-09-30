@@ -4,7 +4,7 @@ Ein [EPC-QR-Code](https://de.wikipedia.org/wiki/EPC-QR-Code) ist ein vom **Europ
 
 ## Demo
 
-[Demo](http://tools.bitfertig.de/epc-qr-code)
+[Demo](http://tools.bitfertig.de/epc-qr-code.js/)
 
 ## Install
 
