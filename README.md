@@ -1,10 +1,12 @@
 # EPC-QR-Code
 
-Ein [EPC-QR-Code] ist ein vom **European Payments Council** standardisierter Datensatz, der alle Daten für eine SEPA-Überweisung enthält, und mittels **QR-Codierung** maschinenlesbar ist.
+An [EPC-QR-Code] is a data set standardized by the **European Payments Council** that contains all the data for a SEPA transfer and is machine-readable using **QR coding**.
+
 
 ## Demo
 
 [Demo]
+
 
 ## Install
 
@@ -16,6 +18,25 @@ npm i @dipser/epc-qr-code.js
 
 
 ## Usage
+
+Minimal example:
+
+```html
+<script type="module">
+import { girocode } from "@dipser/epc-qr-code.js";
+var g = girocode({
+    'iban': 'DE02100100100006820101',
+    'bic': 'PBNKDEFF',
+    'name': 'Postbank',
+    'amount': '10.00',
+    'reason': 'Invoice X',
+});
+g.svg()
+// g.svg_data_url()
+</script>
+```
+
+Complete example:
 
 ```html
 <script type="module">
