@@ -10,7 +10,7 @@
         "clean": "rm -r dist",
         "build-dev": "webpack -d --mode development",
         "build-prod": "webpack -p --mode production",
-        "dev": "webpack --config webpack.config.js --watch --mode development",
+        "dev": "webpack --config webpack.config.js --watch --mode production",
         "dev-nodemon": "nodemon --watch webpack.config.js --exec \"webpack --config webpack.config.js --watch --mode development\""
     },
     "keywords": [

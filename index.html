@@ -73,9 +73,9 @@ document.querySelector('#elemid').innerHTML = g.svg();
     <script type="module">
     import { girocode } from "./dist/epc-qr-code.esm.js";
     var gc = girocode({
+        'iban': 'DE02100100100006820101', // IBAN
         'bic': 'PBNKDEFF', // BIC
         'name': 'Postbank', // Bank name
-        'iban': 'DE02100100100006820101', // IBAN
         'currency': 'EUR',
         'amount': '10.00', // Amount (Format „EUR#.##“)
         'reason': 'Invoice XYZ', // Verwendungszweck (max of 140 characters)
