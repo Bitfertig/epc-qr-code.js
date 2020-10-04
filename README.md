@@ -1,16 +1,19 @@
 # EPC-QR-Code
 
-Ein [EPC-QR-Code](https://de.wikipedia.org/wiki/EPC-QR-Code) ist ein vom **European Payments Council** standardisierter Datensatz, der alle Daten für eine SEPA-Überweisung enthält, und mittels **QR-Codierung** maschinenlesbar ist.
+Ein [EPC-QR-Code] ist ein vom **European Payments Council** standardisierter Datensatz, der alle Daten für eine SEPA-Überweisung enthält, und mittels **QR-Codierung** maschinenlesbar ist.
 
 ## Demo
 
-[Demo](http://tools.bitfertig.de/epc-qr-code.js/)
+[Demo]
 
 ## Install
+
+NPM package: [@dipser/epc-qr-code.js]
 
 ```bash
 npm i @dipser/epc-qr-code.js
 ```
+
 
 ## Usage
 
@@ -25,7 +28,8 @@ var g = girocode({
     'bic': 'PBNKDEFF', // BIC
     'name': 'Postbank', // Bank name
     'iban': 'DE02100100100006820101', // IBAN
-    'amount': 'EUR10.00', // Amount (Format „EUR#.##“)
+    'currency': 'EUR',
+    'amount': '10.00', // Amount (Format „#.##“)
     'char': '', // Zweck (vierstelliger Buchstabencode, optional)
     'ref': '', // Reference (strukturierter 35-Zeichen-Code gem. ISO 11649 RF Creditor Reference)
     'reason': '', // Verwendungszweck (max of 140 characters)
@@ -34,3 +38,9 @@ var g = girocode({
 g.svg() // or g.svg_data_url()
 </script>
 ```
+
+
+
+[EPC-QR-Code]: https://de.wikipedia.org/wiki/EPC-QR-Code
+[Demo]: http://tools.bitfertig.de/epc-qr-code.js/
+[@dipser/epc-qr-code.js]: https://www.npmjs.com/package/@dipser/epc-qr-code.js
