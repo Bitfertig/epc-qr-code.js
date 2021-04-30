@@ -27,7 +27,7 @@ import { girocode } from "@dipser/epc-qr-code.js";
 var g = girocode({
     'iban': 'DE02100100100006820101',
     'bic': 'PBNKDEFF',
-    'name': 'Postbank',
+    'name': 'Max Muster',
     'amount': '10.00',
     'reason': 'Invoice X',
 });
@@ -47,7 +47,7 @@ var g = girocode({
     'encoding': '2', // Character set: 1 = UTF-8, 2 = ISO 8859-1
     'transfer': 'SCT', // Identification: SCT = SEPA credit transfer
     'bic': 'PBNKDEFF', // BIC
-    'name': 'Postbank', // Bank name
+    'name': 'Max Muster', // Name of the beneficiary
     'iban': 'DE02100100100006820101', // IBAN
     'currency': 'EUR',
     'amount': '10.00', // Amount (Format „#.##“)

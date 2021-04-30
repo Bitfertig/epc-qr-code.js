@@ -11,7 +11,7 @@ class GiroCode {
             'encoding': '2', // Character set: 1 = UTF-8, 2 = ISO 8859-1
             'transfer': 'SCT', // Identification: SCT = SEPA credit transfer
             'bic': '', //'PBNKDEFF', // BIC
-            'name': '', // 'Postbank', // Bank name
+            'name': '', // 'Max Muster', // Name of the beneficiary
             'iban': '', //'DE02100100100006820101', // IBAN
             'currency': 'EUR',
             'amount': '0.00', // Amount (Format „EUR#.##“)
