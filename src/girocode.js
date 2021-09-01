@@ -21,7 +21,6 @@ class GiroCode {
             'hint': '', // Optional hint to user
         };
         this._config = Object.assign(config_defaults, config);
-        console.log(config, this._config);
 
 let girocode_string = `
 ${this._config.service}
